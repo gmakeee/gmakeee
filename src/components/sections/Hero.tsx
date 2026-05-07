@@ -7,26 +7,10 @@ export function Hero() {
       style={{ position: "relative", zIndex: 1 }}
       className="min-h-screen flex flex-col items-center justify-center px-6 py-32 text-center"
     >
-      {/* Available badge */}
-      <div className="anim-fade-up anim-fade-up-1 mb-8 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black/[0.04] border border-black/[0.06]">
-        <span className="relative flex h-2 w-2">
-          <span
-            className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75"
-            style={{ background: "#0071e3" }}
-          />
-          <span
-            className="relative inline-flex rounded-full h-2 w-2"
-            style={{ background: "#0071e3" }}
-          />
-        </span>
-        <span className="text-sm font-medium tracking-wide" style={{ color: "#1D1D1F", opacity: 0.75 }}>
-          Доступен для новых проектов
-        </span>
-      </div>
 
       {/* Headline */}
       <h1
-        className="anim-fade-up anim-fade-up-2 font-bold tracking-tighter leading-[1.05] mb-6"
+        className="anim-fade-up anim-fade-up-1 font-bold tracking-tighter leading-[1.05] mb-6"
         style={{
           fontSize: "clamp(2.8rem, 8vw, 5.5rem)",
           color: "#1D1D1F",
@@ -40,7 +24,7 @@ export function Hero() {
 
       {/* Sub-headline */}
       <p
-        className="anim-fade-up anim-fade-up-3 leading-relaxed mb-10"
+        className="anim-fade-up anim-fade-up-2 leading-relaxed mb-10"
         style={{
           fontSize: "clamp(1.05rem, 2.5vw, 1.35rem)",
           color: "#86868B",
@@ -53,7 +37,7 @@ export function Hero() {
       </p>
 
       {/* CTAs */}
-      <div className="anim-fade-up anim-fade-up-4 flex flex-col sm:flex-row items-center gap-4">
+      <div className="anim-fade-up anim-fade-up-3 flex flex-col sm:flex-row items-center gap-4">
         <a
           href="#services"
           className="btn-primary"
@@ -63,7 +47,7 @@ export function Hero() {
         </a>
 
         <a
-          href="https://t.me/YOUR_USERNAME"
+          href="https://t.me/gmakee"
           target="_blank"
           rel="noopener noreferrer"
           className="btn-secondary"

@@ -217,9 +217,9 @@ export function ServicesSection() {
                   </h2>
                   <p
                     className="mb-8"
-                    style={{ fontSize: "1.15rem", color: "#86868B", lineHeight: 1.65, fontWeight: 500, maxWidth: "580px" }}
+                    style={{ fontSize: "1.1rem", color: "#1D1D1F", lineHeight: 1.7, fontWeight: 400, maxWidth: "600px" }}
                   >
-                    {activeService.shortDesc}
+                    {activeService.fullDesc}
                   </p>
 
                   {/* Details */}
@@ -271,7 +271,7 @@ export function ServicesSection() {
                     </p>
                   </div>
 
-                  <TelegramCTA username="YOUR_USERNAME" email="contact@example.com" />
+                  <TelegramCTA username="gmakee" email="d.bolvachev@yandex.ru" />
                 </div>
               </motion.div>
             </div>
