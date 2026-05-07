@@ -56,22 +56,7 @@ export function Hero() {
       <div className="anim-fade-up anim-fade-up-4 flex flex-col sm:flex-row items-center gap-4">
         <a
           href="#services"
-          style={{
-            background: "#1D1D1F",
-            color: "#fff",
-            padding: "14px 32px",
-            borderRadius: "9999px",
-            fontWeight: 600,
-            fontSize: "1.05rem",
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "8px",
-            textDecoration: "none",
-            boxShadow: "0 4px 20px rgba(0,0,0,0.12)",
-            transition: "opacity 0.2s, transform 0.2s",
-          }}
-          onMouseEnter={e => { (e.currentTarget as HTMLElement).style.opacity = "0.88"; (e.currentTarget as HTMLElement).style.transform = "scale(1.03)"; }}
-          onMouseLeave={e => { (e.currentTarget as HTMLElement).style.opacity = "1"; (e.currentTarget as HTMLElement).style.transform = "scale(1)"; }}
+          className="btn-primary"
         >
           Смотреть услуги
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -81,23 +66,7 @@ export function Hero() {
           href="https://t.me/YOUR_USERNAME"
           target="_blank"
           rel="noopener noreferrer"
-          style={{
-            background: "rgba(255,255,255,0.6)",
-            color: "#1D1D1F",
-            padding: "14px 28px",
-            borderRadius: "9999px",
-            fontWeight: 600,
-            fontSize: "1.05rem",
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "8px",
-            textDecoration: "none",
-            border: "1px solid rgba(0,0,0,0.08)",
-            backdropFilter: "blur(12px)",
-            transition: "background 0.2s, transform 0.2s",
-          }}
-          onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.9)"; (e.currentTarget as HTMLElement).style.transform = "scale(1.03)"; }}
-          onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.6)"; (e.currentTarget as HTMLElement).style.transform = "scale(1)"; }}
+          className="btn-secondary"
         >
           Написать в Telegram
         </a>
