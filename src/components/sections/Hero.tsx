@@ -43,11 +43,11 @@ export function Hero() {
           className="btn-primary"
         >
           Смотреть услуги
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
         </a>
 
         <a
-          href="https://t.me/gmakee"
+          href="https://t.me/gmakeee"
           target="_blank"
           rel="noopener noreferrer"
           className="btn-secondary"
@@ -61,7 +61,7 @@ export function Hero() {
         <span style={{ fontSize: "0.72rem", letterSpacing: "0.12em", fontWeight: 600, color: "#86868B", textTransform: "uppercase" }}>
           Прокрутите вниз
         </span>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#86868B" strokeWidth="1.5" strokeLinecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#86868B" strokeWidth="1.5" strokeLinecap="round"><path d="M12 5v14M5 12l7 7 7-7" /></svg>
       </div>
     </section>
   );

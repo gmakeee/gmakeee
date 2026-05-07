@@ -271,7 +271,7 @@ export function ServicesSection() {
                     </p>
                   </div>
 
-                  <TelegramCTA username="gmakee" email="d.bolvachev@yandex.ru" />
+                  <TelegramCTA username="gmakeee" email="d.bolvachev@yandex.ru" />
                 </div>
               </motion.div>
             </div>
