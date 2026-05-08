@@ -6,7 +6,7 @@ import { X, ArrowRight } from "lucide-react";
 import { services } from "@/config/services";
 import { TelegramCTA } from "@/components/ui/TelegramCTA";
 
-export function ServicesSection() {
+export function Services2026() {
   const [activeId, setActiveId] = useState<string | null>(null);
 
   const openService = useCallback((id: string) => {
@@ -48,7 +48,6 @@ export function ServicesSection() {
         style={{ position: "relative", zIndex: 1 }}
         className="py-24 px-6 max-w-6xl mx-auto"
       >
-        {/* Section header */}
         <div className="mb-14">
           <p className="text-xs font-mono uppercase tracking-widest mb-4" style={{ color: "#0071e3" }}>
             / Услуги
@@ -64,7 +63,6 @@ export function ServicesSection() {
           </p>
         </div>
 
-        {/* Bento grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-5">
           {services.map((service, index) => (
             <button
@@ -106,11 +104,9 @@ export function ServicesSection() {
         </div>
       </section>
 
-      {/* ─── Modal ─────────────────────────────────────────── */}
       <AnimatePresence>
         {activeService && (
           <>
-            {/* Backdrop */}
             <motion.div
               key="backdrop"
               initial={{ opacity: 0 }}
@@ -128,7 +124,6 @@ export function ServicesSection() {
               }}
             />
 
-            {/* Card */}
             <div
               style={{
                 position: "fixed",
@@ -162,7 +157,6 @@ export function ServicesSection() {
                   flexDirection: "column",
                 }}
               >
-                {/* Sticky header */}
                 <div
                   style={{
                     position: "sticky",
@@ -207,7 +201,6 @@ export function ServicesSection() {
                   </button>
                 </div>
 
-                {/* Body */}
                 <div style={{ padding: "40px", flex: 1 }}>
                   <h2
                     className="font-bold tracking-tighter mb-4"
@@ -222,7 +215,6 @@ export function ServicesSection() {
                     {activeService.fullDesc}
                   </p>
 
-                  {/* Details */}
                   <p
                     className="text-xs font-mono uppercase tracking-widest mb-5"
                     style={{ color: "#86868B" }}
@@ -248,7 +240,6 @@ export function ServicesSection() {
                     ))}
                   </ul>
 
-                  {/* Placeholder for project description */}
                   <div
                     style={{
                       background: "rgba(0,0,0,0.025)",

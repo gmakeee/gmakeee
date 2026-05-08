@@ -1,14 +1,11 @@
-// NO "use client" — this is a server component, CSS handles animation
-// This avoids any Framer Motion hydration issues that hide the text
+// NO "use client" — keep CSS-only entry animation so text is always visible.
 
-export function Hero() {
+export function Hero2026() {
   return (
     <section
       style={{ position: "relative", zIndex: 1 }}
       className="min-h-screen flex flex-col items-center justify-center px-6 py-32 text-center"
     >
-
-      {/* Headline */}
       <h1
         className="anim-fade-up anim-fade-up-1 font-bold tracking-tighter leading-[1.05] mb-6"
         style={{
@@ -22,7 +19,6 @@ export function Hero() {
         <span style={{ color: "#0071e3" }}>которые работают на ваш бизнес</span>
       </h1>
 
-      {/* Sub-headline */}
       <p
         className="anim-fade-up anim-fade-up-2 leading-relaxed mb-10"
         style={{
@@ -36,14 +32,21 @@ export function Hero() {
         Результат: конверсия, скорость, рост.
       </p>
 
-      {/* CTAs */}
       <div className="anim-fade-up anim-fade-up-3 flex flex-col sm:flex-row items-center gap-4">
-        <a
-          href="#services"
-          className="btn-primary"
-        >
+        <a href="#services" className="btn-primary">
           Смотреть услуги
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
         </a>
 
         <a
@@ -56,12 +59,29 @@ export function Hero() {
         </a>
       </div>
 
-      {/* Scroll indicator */}
       <div className="anim-fade-up anim-fade-up-4 mt-20 flex flex-col items-center gap-2 opacity-40">
-        <span style={{ fontSize: "0.72rem", letterSpacing: "0.12em", fontWeight: 600, color: "#86868B", textTransform: "uppercase" }}>
+        <span
+          style={{
+            fontSize: "0.72rem",
+            letterSpacing: "0.12em",
+            fontWeight: 600,
+            color: "#86868B",
+            textTransform: "uppercase",
+          }}
+        >
           Прокрутите вниз
         </span>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#86868B" strokeWidth="1.5" strokeLinecap="round"><path d="M12 5v14M5 12l7 7 7-7" /></svg>
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#86868B"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+        >
+          <path d="M12 5v14M5 12l7 7 7-7" />
+        </svg>
       </div>
     </section>
   );

@@ -6,7 +6,7 @@ import { Mail, Send } from "lucide-react";
 const EMAIL = "d.bolvachev@yandex.ru";
 const TG = "gmakee";
 
-export function Footer() {
+export function Footer2026() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {

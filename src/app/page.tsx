@@ -1,14 +1,15 @@
-import { ServicesSection } from "@/components/sections/ServicesSection";
-import { Hero } from "@/components/sections/Hero";
-import { AuraBackground } from "@/components/ui/AuraBackground";
+import { EraBackground } from "@/components/ui/EraBackground";
+import { EraHero } from "@/components/sections/EraHero";
+import { EraServices } from "@/components/sections/EraServices";
+import { EraSlider } from "@/components/era/EraSlider";
 
 export default function Home() {
   return (
     <div className="relative">
-      <AuraBackground />
-      <Hero />
-      <ServicesSection />
+      <EraBackground />
+      <EraHero />
+      <EraServices />
+      <EraSlider />
     </div>
   );
 }
-
